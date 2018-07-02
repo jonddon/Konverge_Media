@@ -133,19 +133,19 @@ class CompanyController extends Controller
     {
         //
     }
-    public function sendmail(){
-        $data = array(
-            'name' => "Konverge Media",
-        );
+    // public function sendmail(){
+    //     $data = array(
+    //         'name' => "Konverge Media",
+    //     );
     
-        Mail::send('emails.pdf', $data, function ($message) {
+    //     Mail::send('emails.pdf', $data, function ($message) {
     
-            $message->from('admin@knvgmedia.com', 'Konverge Media');
+    //         $message->from('admin@knvgmedia.com', 'Konverge Media');
     
-            $message->to('john@webcoupers.com', 'olabode@webcoupers.com')->subject('Google Digital Skills');
+    //         $message->to('olabode@webcoupers.com')->subject('Google Digital Skills');
     
-        });
+    //     });
     
-        return "Your email has been sent successfully";
-    }
+    //     return "Your email has been sent successfully";
+    // }
 }

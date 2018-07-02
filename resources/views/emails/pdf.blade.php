@@ -9,27 +9,23 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	<link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Dancing+Script"/>
 	
 	<style type="text/css">
         body{
-            background-image: url(certificatebg.png);
-            background-size: 100% 100%;
-            background-repeat: no-repeat;
-            background-position: center center;
-            width: 100%;
+            margin:0px;
+			padding:0px;
+			border:0px
         }
 
 	.container-fluid
 	{
 		text-align:center;
-		padding-top: 40px;
+		
+		border: 0px;
+		margin: 0px;
+		padding:0px
 	}
-	.logo
-	{
-		padding-right: 150px;
-	}
-	
 	h2
 	{
 		font-family: verdana;
@@ -56,12 +52,33 @@
 	
 	p{font-family: sans-serif;}
 
+	.name{
+		font-family: "Dancing Script";
+		font-size: 45px;
+		font-style: normal;
+		font-variant: normal;
+		font-weight: 700;
+		line-height: 64.2857px;
+	}
+
 	tab2 { padding-left: 0.5em; }
 
     span{
         width:0px;
         font-size: 40px;
     }
+	.certField{
+		/* padding-top: 40px; */
+        width: 100%;
+	}
+	.back{
+		position: absolute;
+    	left: 0px;
+    	top: 0px;
+   		z-index: -1;
+		width:100%;
+		height:100%;
+	}
 </style>
 
 
@@ -70,26 +87,27 @@
 </head>
 <body>
 <div class="container-fluid">
-
+	<img src="certificatebg.png" class="back">
 	<div class="certField">
-        <img src="Knvglogo.png" class="img-responsive" style="width: 200px; height:50px">
-		<h2 style="color:blue">Certificate of Participation</h3><br>
+	<br>
+        <img src="Knvglogo.png" class="img-responsive" style="width: 250px"><br>
+		<h2 style="color:#1e488c; letter-spacing:3px; line-height: 50px">Certificate of Participation</h3>
 
-		<h6> <i>This certificate is awarded to:</i></h6><br><br>
+		<p style="font-size: 22px; line-height:40px"> <i>This certificate is awarded to:</i></p>
 		
 		<div class="hero">
-
-			<p style="font-size: 45px; font-family: 'Dancing Script'; font-weight: bolder;letter-spacing: 5px"> Bode Abesin</p>
-		<br>
+			<p class="name" style="font-size:45; letter-spacing: 5px"> Bode Abesin</p>
+		
 		</div>
-		<p> for participating in the<br> <span style="color:#4285f4">G</span>
+		<p style="font-size:22px; "> <i>for participating in the</i><br> <span style="color:#4285f4">G</span>
         <span style="color:#ea4335">o</span>
         <span style="color:#fbbc05">o</span>
         <span style="color:#4285f4">g</span>
         <span style="color:#34a853">l</span>
-        <span style="color:#ea4335">e</span> <span style="color:grey">Digital Skills For Africa</span><br>
-        <span style="font-size:20px">Program</span></p>
-		<img src="signature.png" alt="Signature" style="height:80px; width:150px">
+        <span style="color:#ea4335">e</span> <span style="color:grey">Digital Skills For Africa</span></p>
+        <p style="font-size:22px"><strong>Program</strong></p>
+		<img src="signature.png" alt="Signature" style="height:60px;">
+		<hr align="center" width="40%">
 		<p>Olushola A. Aromokun<br>
 		Konverge Media, Program lead.<br>
 		Sponsored by <span style="color:#4285f4">G</span>

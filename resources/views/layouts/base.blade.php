@@ -198,7 +198,7 @@
                 message: "Welcome to <b>Konverge Media App</b> - premium app for training companies."
 
             },{
-                type: 'success',
+                type: 'danger',
                 timer: 4000
             });
         });
